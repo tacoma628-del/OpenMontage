@@ -1,0 +1,1406 @@
+{
+  "theme": "flat-motion-graphics",
+  "cuts": [
+    {
+      "id": "hook",
+      "type": "hero_title",
+      "in_seconds": 0.0,
+      "out_seconds": 5.4,
+      "text": "55,000 Stars.",
+      "subtitle": "Does it actually work?",
+      "backgroundColor": "#0F172A"
+    },
+    {
+      "id": "what-is-it",
+      "type": "callout",
+      "in_seconds": 5.4,
+      "out_seconds": 17.0,
+      "title": "What Is OpenMontage?",
+      "text": "One prompt in. Research, script, scenes, render \u2014 an AI agent directs the whole pipeline. No giant black box.",
+      "callout_type": "info",
+      "accentColor": "#22D3EE",
+      "backgroundColor": "#0F172A",
+      "color": "#F8FAFC"
+    },
+    {
+      "id": "terminal-setup",
+      "type": "terminal_scene",
+      "in_seconds": 17.0,
+      "out_seconds": 39.0,
+      "terminalTitle": "bash \u2014 OpenMontage setup",
+      "prompt": "$",
+      "accentColor": "#22D3EE",
+      "backgroundColor": "#0F172A",
+      "steps": [
+        {
+          "kind": "pause",
+          "seconds": 2.4
+        },
+        {
+          "kind": "cmd",
+          "text": "git clone https://github.com/calesthio/OpenMontage.git",
+          "typeSpeed": 0.03,
+          "holdSeconds": 0.3
+        },
+        {
+          "kind": "out",
+          "text": "Cloning into 'OpenMontage'..."
+        },
+        {
+          "kind": "pause",
+          "seconds": 0.6
+        },
+        {
+          "kind": "cmd",
+          "text": "make setup",
+          "typeSpeed": 0.06,
+          "holdSeconds": 0.3
+        },
+        {
+          "kind": "out",
+          "text": "==> Installing Python dependencies..."
+        },
+        {
+          "kind": "out",
+          "text": "==> Installing Remotion composer..."
+        },
+        {
+          "kind": "out",
+          "text": "Done! Open this project in your AI coding assistant."
+        },
+        {
+          "kind": "pill",
+          "text": "setup complete",
+          "color": "#34D399",
+          "durationSeconds": 2.2
+        },
+        {
+          "kind": "pause",
+          "seconds": 1.0
+        },
+        {
+          "kind": "cmd",
+          "text": "make demo",
+          "typeSpeed": 0.06,
+          "holdSeconds": 0.2
+        },
+        {
+          "kind": "out",
+          "text": "ERROR: Unable to find voice: en_US-lessac-medium"
+        },
+        {
+          "kind": "pill",
+          "text": "voice model missing",
+          "color": "#F59E0B",
+          "durationSeconds": 2.4
+        },
+        {
+          "kind": "pause",
+          "seconds": 1.6
+        },
+        {
+          "kind": "cmd",
+          "text": "python -m piper.download_voices en_US-lessac-medium",
+          "typeSpeed": 0.028,
+          "holdSeconds": 0.4
+        },
+        {
+          "kind": "out",
+          "text": "Downloaded en_US-lessac-medium.onnx (31 MB)"
+        },
+        {
+          "kind": "pill",
+          "text": "narration ready \u2014 $0",
+          "color": "#34D399",
+          "durationSeconds": 2.6
+        },
+        {
+          "kind": "pause",
+          "seconds": 1.8
+        }
+      ]
+    },
+    {
+      "id": "zero-key-stat",
+      "type": "stat_card",
+      "in_seconds": 39.0,
+      "out_seconds": 49.9,
+      "stat": "$0",
+      "subtitle": "Zero paid API providers used",
+      "accentColor": "#A78BFA",
+      "backgroundColor": "#0F172A"
+    },
+    {
+      "id": "terminal-render",
+      "type": "terminal_scene",
+      "in_seconds": 49.9,
+      "out_seconds": 59.9,
+      "terminalTitle": "bash \u2014 zero-key render",
+      "prompt": "$",
+      "accentColor": "#34D399",
+      "backgroundColor": "#0F172A",
+      "steps": [
+        {
+          "kind": "pause",
+          "seconds": 0.9
+        },
+        {
+          "kind": "cmd",
+          "text": "python render_demo.py code-to-screen",
+          "typeSpeed": 0.03,
+          "holdSeconds": 0.3
+        },
+        {
+          "kind": "out",
+          "text": "Bundling 100%"
+        },
+        {
+          "kind": "out",
+          "text": "Rendered 750/750"
+        },
+        {
+          "kind": "out",
+          "text": "Encoded 750/750"
+        },
+        {
+          "kind": "pill",
+          "text": "under 20s",
+          "color": "#34D399",
+          "durationSeconds": 2.6
+        },
+        {
+          "kind": "pause",
+          "seconds": 2.5
+        }
+      ]
+    },
+    {
+      "id": "result-stat",
+      "type": "stat_card",
+      "in_seconds": 59.9,
+      "out_seconds": 67.4,
+      "stat": "3.6 MB",
+      "subtitle": "Real, playable video \u2014 first try",
+      "accentColor": "#34D399",
+      "backgroundColor": "#0F172A"
+    },
+    {
+      "id": "made-with",
+      "type": "text_card",
+      "in_seconds": 67.4,
+      "out_seconds": 79.0,
+      "text": "This video was made the same way.",
+      "backgroundColor": "#0F172A",
+      "color": "#F8FAFC"
+    },
+    {
+      "id": "outro",
+      "type": "hero_title",
+      "in_seconds": 79.0,
+      "out_seconds": 89.5,
+      "text": "Point It At An Idea.",
+      "subtitle": "Let the agent run the pipeline.",
+      "backgroundColor": "#0F172A"
+    }
+  ],
+  "overlays": [],
+  "captions": [
+    {
+      "word": "There",
+      "startMs": 0,
+      "endMs": 160
+    },
+    {
+      "word": "are",
+      "startMs": 160,
+      "endMs": 280
+    },
+    {
+      "word": "55",
+      "startMs": 280,
+      "endMs": 800
+    },
+    {
+      "word": ",000",
+      "startMs": 800,
+      "endMs": 1300
+    },
+    {
+      "word": "stars",
+      "startMs": 1300,
+      "endMs": 1680
+    },
+    {
+      "word": "on",
+      "startMs": 1680,
+      "endMs": 1900
+    },
+    {
+      "word": "this",
+      "startMs": 1900,
+      "endMs": 2060
+    },
+    {
+      "word": "repository.",
+      "startMs": 2060,
+      "endMs": 2640
+    },
+    {
+      "word": "I",
+      "startMs": 3080,
+      "endMs": 3180
+    },
+    {
+      "word": "wanted",
+      "startMs": 3180,
+      "endMs": 3460
+    },
+    {
+      "word": "to",
+      "startMs": 3460,
+      "endMs": 3680
+    },
+    {
+      "word": "know",
+      "startMs": 3680,
+      "endMs": 3880
+    },
+    {
+      "word": "if",
+      "startMs": 3880,
+      "endMs": 4040
+    },
+    {
+      "word": "it",
+      "startMs": 4040,
+      "endMs": 4140
+    },
+    {
+      "word": "actually",
+      "startMs": 4140,
+      "endMs": 4560
+    },
+    {
+      "word": "works.",
+      "startMs": 4560,
+      "endMs": 5060
+    },
+    {
+      "word": "OpenMontage",
+      "startMs": 5580,
+      "endMs": 6180
+    },
+    {
+      "word": "turns",
+      "startMs": 6180,
+      "endMs": 6560
+    },
+    {
+      "word": "one",
+      "startMs": 6560,
+      "endMs": 6920
+    },
+    {
+      "word": "prompt",
+      "startMs": 6920,
+      "endMs": 7280
+    },
+    {
+      "word": "into",
+      "startMs": 7280,
+      "endMs": 7580
+    },
+    {
+      "word": "a",
+      "startMs": 7580,
+      "endMs": 7740
+    },
+    {
+      "word": "finished",
+      "startMs": 7740,
+      "endMs": 8000
+    },
+    {
+      "word": "video.",
+      "startMs": 8000,
+      "endMs": 8460
+    },
+    {
+      "word": "Research,",
+      "startMs": 8780,
+      "endMs": 9000
+    },
+    {
+      "word": "script,",
+      "startMs": 9420,
+      "endMs": 9720
+    },
+    {
+      "word": "scene",
+      "startMs": 10260,
+      "endMs": 10340
+    },
+    {
+      "word": "plan,",
+      "startMs": 10340,
+      "endMs": 10620
+    },
+    {
+      "word": "render,",
+      "startMs": 11020,
+      "endMs": 11200
+    },
+    {
+      "word": "an",
+      "startMs": 11560,
+      "endMs": 11620
+    },
+    {
+      "word": "AI",
+      "startMs": 11620,
+      "endMs": 11800
+    },
+    {
+      "word": "coding",
+      "startMs": 11800,
+      "endMs": 12120
+    },
+    {
+      "word": "agent",
+      "startMs": 12120,
+      "endMs": 12500
+    },
+    {
+      "word": "directs",
+      "startMs": 12500,
+      "endMs": 13060
+    },
+    {
+      "word": "the",
+      "startMs": 13060,
+      "endMs": 13160
+    },
+    {
+      "word": "whole",
+      "startMs": 13160,
+      "endMs": 13320
+    },
+    {
+      "word": "thing,",
+      "startMs": 13320,
+      "endMs": 13640
+    },
+    {
+      "word": "using",
+      "startMs": 14080,
+      "endMs": 14320
+    },
+    {
+      "word": "real",
+      "startMs": 14320,
+      "endMs": 14560
+    },
+    {
+      "word": "tools",
+      "startMs": 14560,
+      "endMs": 15060
+    },
+    {
+      "word": "instead",
+      "startMs": 15060,
+      "endMs": 15420
+    },
+    {
+      "word": "of",
+      "startMs": 15420,
+      "endMs": 15620
+    },
+    {
+      "word": "one",
+      "startMs": 15620,
+      "endMs": 15780
+    },
+    {
+      "word": "giant",
+      "startMs": 15780,
+      "endMs": 16140
+    },
+    {
+      "word": "black",
+      "startMs": 16140,
+      "endMs": 16460
+    },
+    {
+      "word": "box.",
+      "startMs": 16460,
+      "endMs": 16820
+    },
+    {
+      "word": "So",
+      "startMs": 17140,
+      "endMs": 17220
+    },
+    {
+      "word": "today,",
+      "startMs": 17220,
+      "endMs": 17500
+    },
+    {
+      "word": "inside",
+      "startMs": 17820,
+      "endMs": 18120
+    },
+    {
+      "word": "Claude",
+      "startMs": 18120,
+      "endMs": 18640
+    },
+    {
+      "word": "Code,",
+      "startMs": 18640,
+      "endMs": 18880
+    },
+    {
+      "word": "I",
+      "startMs": 19380,
+      "endMs": 19440
+    },
+    {
+      "word": "cloned",
+      "startMs": 19440,
+      "endMs": 19720
+    },
+    {
+      "word": "the",
+      "startMs": 19720,
+      "endMs": 19840
+    },
+    {
+      "word": "repository",
+      "startMs": 19840,
+      "endMs": 20280
+    },
+    {
+      "word": "and",
+      "startMs": 20280,
+      "endMs": 20580
+    },
+    {
+      "word": "ran",
+      "startMs": 20580,
+      "endMs": 20740
+    },
+    {
+      "word": "the",
+      "startMs": 20740,
+      "endMs": 20900
+    },
+    {
+      "word": "setup.",
+      "startMs": 20900,
+      "endMs": 21200
+    },
+    {
+      "word": "It",
+      "startMs": 21500,
+      "endMs": 21620
+    },
+    {
+      "word": "pulled",
+      "startMs": 21620,
+      "endMs": 21840
+    },
+    {
+      "word": "its",
+      "startMs": 21840,
+      "endMs": 22080
+    },
+    {
+      "word": "own",
+      "startMs": 22080,
+      "endMs": 22280
+    },
+    {
+      "word": "Python,",
+      "startMs": 22280,
+      "endMs": 22600
+    },
+    {
+      "word": "installed",
+      "startMs": 23140,
+      "endMs": 23340
+    },
+    {
+      "word": "the",
+      "startMs": 23340,
+      "endMs": 23620
+    },
+    {
+      "word": "dependencies",
+      "startMs": 23620,
+      "endMs": 24080
+    },
+    {
+      "word": "and",
+      "startMs": 24080,
+      "endMs": 24720
+    },
+    {
+      "word": "set",
+      "startMs": 24720,
+      "endMs": 24960
+    },
+    {
+      "word": "up",
+      "startMs": 24960,
+      "endMs": 25100
+    },
+    {
+      "word": "the",
+      "startMs": 25100,
+      "endMs": 25220
+    },
+    {
+      "word": "render",
+      "startMs": 25220,
+      "endMs": 25440
+    },
+    {
+      "word": "engine",
+      "startMs": 25440,
+      "endMs": 25800
+    },
+    {
+      "word": "automatically.",
+      "startMs": 25800,
+      "endMs": 26380
+    },
+    {
+      "word": "Then",
+      "startMs": 26380,
+      "endMs": 27080
+    },
+    {
+      "word": "it",
+      "startMs": 27080,
+      "endMs": 27240
+    },
+    {
+      "word": "hit",
+      "startMs": 27240,
+      "endMs": 27440
+    },
+    {
+      "word": "a",
+      "startMs": 27440,
+      "endMs": 27580
+    },
+    {
+      "word": "real",
+      "startMs": 27580,
+      "endMs": 27780
+    },
+    {
+      "word": "snag.",
+      "startMs": 27780,
+      "endMs": 28340
+    },
+    {
+      "word": "The",
+      "startMs": 28580,
+      "endMs": 28640
+    },
+    {
+      "word": "narration",
+      "startMs": 28640,
+      "endMs": 28900
+    },
+    {
+      "word": "voice",
+      "startMs": 28900,
+      "endMs": 29320
+    },
+    {
+      "word": "model",
+      "startMs": 29320,
+      "endMs": 29680
+    },
+    {
+      "word": "wasn't",
+      "startMs": 29680,
+      "endMs": 30040
+    },
+    {
+      "word": "actually",
+      "startMs": 30040,
+      "endMs": 30440
+    },
+    {
+      "word": "downloaded",
+      "startMs": 30440,
+      "endMs": 30980
+    },
+    {
+      "word": "yet.",
+      "startMs": 30980,
+      "endMs": 31300
+    },
+    {
+      "word": "The",
+      "startMs": 31560,
+      "endMs": 31620
+    },
+    {
+      "word": "fix",
+      "startMs": 31620,
+      "endMs": 31860
+    },
+    {
+      "word": "was",
+      "startMs": 31860,
+      "endMs": 32060
+    },
+    {
+      "word": "small,",
+      "startMs": 32060,
+      "endMs": 32400
+    },
+    {
+      "word": "pull",
+      "startMs": 32700,
+      "endMs": 32820
+    },
+    {
+      "word": "the",
+      "startMs": 32820,
+      "endMs": 32980
+    },
+    {
+      "word": "Piper",
+      "startMs": 32980,
+      "endMs": 33240
+    },
+    {
+      "word": "voice",
+      "startMs": 33240,
+      "endMs": 33540
+    },
+    {
+      "word": "model,",
+      "startMs": 33540,
+      "endMs": 33960
+    },
+    {
+      "word": "point",
+      "startMs": 34460,
+      "endMs": 34600
+    },
+    {
+      "word": "the",
+      "startMs": 34600,
+      "endMs": 34760
+    },
+    {
+      "word": "tool",
+      "startMs": 34760,
+      "endMs": 35000
+    },
+    {
+      "word": "at",
+      "startMs": 35000,
+      "endMs": 35200
+    },
+    {
+      "word": "it,",
+      "startMs": 35200,
+      "endMs": 35400
+    },
+    {
+      "word": "and",
+      "startMs": 35640,
+      "endMs": 35760
+    },
+    {
+      "word": "local",
+      "startMs": 35760,
+      "endMs": 36020
+    },
+    {
+      "word": "narration",
+      "startMs": 36020,
+      "endMs": 36380
+    },
+    {
+      "word": "was",
+      "startMs": 36380,
+      "endMs": 36720
+    },
+    {
+      "word": "live.",
+      "startMs": 36720,
+      "endMs": 37000
+    },
+    {
+      "word": "No",
+      "startMs": 37360,
+      "endMs": 37480
+    },
+    {
+      "word": "API",
+      "startMs": 37480,
+      "endMs": 37740
+    },
+    {
+      "word": "key",
+      "startMs": 37740,
+      "endMs": 38140
+    },
+    {
+      "word": "required.",
+      "startMs": 38140,
+      "endMs": 38680
+    },
+    {
+      "word": "Then",
+      "startMs": 38980,
+      "endMs": 39140
+    },
+    {
+      "word": "came",
+      "startMs": 39140,
+      "endMs": 39400
+    },
+    {
+      "word": "the",
+      "startMs": 39400,
+      "endMs": 39640
+    },
+    {
+      "word": "real",
+      "startMs": 39640,
+      "endMs": 39880
+    },
+    {
+      "word": "test.",
+      "startMs": 39880,
+      "endMs": 40420
+    },
+    {
+      "word": "Render",
+      "startMs": 40740,
+      "endMs": 40880
+    },
+    {
+      "word": "a",
+      "startMs": 40880,
+      "endMs": 41040
+    },
+    {
+      "word": "video",
+      "startMs": 41040,
+      "endMs": 41320
+    },
+    {
+      "word": "using",
+      "startMs": 41320,
+      "endMs": 41780
+    },
+    {
+      "word": "zero",
+      "startMs": 41780,
+      "endMs": 42160
+    },
+    {
+      "word": "paid",
+      "startMs": 42160,
+      "endMs": 42500
+    },
+    {
+      "word": "providers.",
+      "startMs": 42500,
+      "endMs": 43120
+    },
+    {
+      "word": "No",
+      "startMs": 43560,
+      "endMs": 43700
+    },
+    {
+      "word": "open",
+      "startMs": 43700,
+      "endMs": 44000
+    },
+    {
+      "word": "AI.",
+      "startMs": 44000,
+      "endMs": 44260
+    },
+    {
+      "word": "No",
+      "startMs": 44820,
+      "endMs": 44900
+    },
+    {
+      "word": "11",
+      "startMs": 44900,
+      "endMs": 45240
+    },
+    {
+      "word": "labs.",
+      "startMs": 45240,
+      "endMs": 45520
+    },
+    {
+      "word": "No",
+      "startMs": 46080,
+      "endMs": 46200
+    },
+    {
+      "word": "image",
+      "startMs": 46200,
+      "endMs": 46460
+    },
+    {
+      "word": "generation.",
+      "startMs": 46460,
+      "endMs": 46980
+    },
+    {
+      "word": "Just",
+      "startMs": 47420,
+      "endMs": 47580
+    },
+    {
+      "word": "local",
+      "startMs": 47580,
+      "endMs": 47920
+    },
+    {
+      "word": "tools",
+      "startMs": 47920,
+      "endMs": 48340
+    },
+    {
+      "word": "and",
+      "startMs": 48340,
+      "endMs": 48620
+    },
+    {
+      "word": "free",
+      "startMs": 48620,
+      "endMs": 48820
+    },
+    {
+      "word": "stock",
+      "startMs": 48820,
+      "endMs": 49100
+    },
+    {
+      "word": "sources.",
+      "startMs": 49100,
+      "endMs": 49500
+    },
+    {
+      "word": "750",
+      "startMs": 49940,
+      "endMs": 50500
+    },
+    {
+      "word": "frames",
+      "startMs": 50500,
+      "endMs": 51300
+    },
+    {
+      "word": "bundled,",
+      "startMs": 51300,
+      "endMs": 52080
+    },
+    {
+      "word": "rendered,",
+      "startMs": 52480,
+      "endMs": 52700
+    },
+    {
+      "word": "and",
+      "startMs": 53100,
+      "endMs": 53200
+    },
+    {
+      "word": "encoded",
+      "startMs": 53200,
+      "endMs": 53640
+    },
+    {
+      "word": "in",
+      "startMs": 53640,
+      "endMs": 53820
+    },
+    {
+      "word": "under",
+      "startMs": 53820,
+      "endMs": 54060
+    },
+    {
+      "word": "20",
+      "startMs": 54060,
+      "endMs": 54440
+    },
+    {
+      "word": "seconds.",
+      "startMs": 54440,
+      "endMs": 54940
+    },
+    {
+      "word": "The",
+      "startMs": 54940,
+      "endMs": 55260
+    },
+    {
+      "word": "only",
+      "startMs": 55260,
+      "endMs": 55440
+    },
+    {
+      "word": "slow",
+      "startMs": 55440,
+      "endMs": 55800
+    },
+    {
+      "word": "part",
+      "startMs": 55800,
+      "endMs": 56120
+    },
+    {
+      "word": "was",
+      "startMs": 56120,
+      "endMs": 56340
+    },
+    {
+      "word": "a",
+      "startMs": 56340,
+      "endMs": 56440
+    },
+    {
+      "word": "one",
+      "startMs": 56440,
+      "endMs": 56620
+    },
+    {
+      "word": "time",
+      "startMs": 56620,
+      "endMs": 56860
+    },
+    {
+      "word": "93",
+      "startMs": 56860,
+      "endMs": 57440
+    },
+    {
+      "word": "megabyte",
+      "startMs": 57440,
+      "endMs": 57860
+    },
+    {
+      "word": "download",
+      "startMs": 57860,
+      "endMs": 58300
+    },
+    {
+      "word": "for",
+      "startMs": 58300,
+      "endMs": 58560
+    },
+    {
+      "word": "the",
+      "startMs": 58560,
+      "endMs": 58660
+    },
+    {
+      "word": "render",
+      "startMs": 58660,
+      "endMs": 58900
+    },
+    {
+      "word": "itself.",
+      "startMs": 58900,
+      "endMs": 59400
+    },
+    {
+      "word": "The",
+      "startMs": 59720,
+      "endMs": 59860
+    },
+    {
+      "word": "result.",
+      "startMs": 59860,
+      "endMs": 60120
+    },
+    {
+      "word": "A",
+      "startMs": 60580,
+      "endMs": 60680
+    },
+    {
+      "word": "real",
+      "startMs": 60680,
+      "endMs": 60880
+    },
+    {
+      "word": "3",
+      "startMs": 60880,
+      "endMs": 61260
+    },
+    {
+      "word": ".6",
+      "startMs": 61260,
+      "endMs": 61800
+    },
+    {
+      "word": "megabyte",
+      "startMs": 61800,
+      "endMs": 62340
+    },
+    {
+      "word": "video",
+      "startMs": 62340,
+      "endMs": 62700
+    },
+    {
+      "word": "file.",
+      "startMs": 62700,
+      "endMs": 63160
+    },
+    {
+      "word": "Playable",
+      "startMs": 63460,
+      "endMs": 63860
+    },
+    {
+      "word": "on",
+      "startMs": 63860,
+      "endMs": 64200
+    },
+    {
+      "word": "the",
+      "startMs": 64200,
+      "endMs": 64280
+    },
+    {
+      "word": "very",
+      "startMs": 64280,
+      "endMs": 64500
+    },
+    {
+      "word": "first",
+      "startMs": 64500,
+      "endMs": 64860
+    },
+    {
+      "word": "attempt.",
+      "startMs": 64860,
+      "endMs": 65200
+    },
+    {
+      "word": "Zero",
+      "startMs": 65519,
+      "endMs": 65760
+    },
+    {
+      "word": "dollars",
+      "startMs": 65760,
+      "endMs": 66160
+    },
+    {
+      "word": "spent",
+      "startMs": 66160,
+      "endMs": 66460
+    },
+    {
+      "word": "to",
+      "startMs": 66460,
+      "endMs": 66680
+    },
+    {
+      "word": "get",
+      "startMs": 66680,
+      "endMs": 66800
+    },
+    {
+      "word": "there.",
+      "startMs": 66800,
+      "endMs": 67040
+    },
+    {
+      "word": "And",
+      "startMs": 67440,
+      "endMs": 67560
+    },
+    {
+      "word": "this",
+      "startMs": 67560,
+      "endMs": 67740
+    },
+    {
+      "word": "video,",
+      "startMs": 67740,
+      "endMs": 68060
+    },
+    {
+      "word": "the",
+      "startMs": 68500,
+      "endMs": 68660
+    },
+    {
+      "word": "one",
+      "startMs": 68660,
+      "endMs": 68840
+    },
+    {
+      "word": "you",
+      "startMs": 68840,
+      "endMs": 69000
+    },
+    {
+      "word": "are",
+      "startMs": 69000,
+      "endMs": 69120
+    },
+    {
+      "word": "watching",
+      "startMs": 69120,
+      "endMs": 69440
+    },
+    {
+      "word": "right",
+      "startMs": 69440,
+      "endMs": 69720
+    },
+    {
+      "word": "now,",
+      "startMs": 69720,
+      "endMs": 70080
+    },
+    {
+      "word": "was",
+      "startMs": 70380,
+      "endMs": 70540
+    },
+    {
+      "word": "made",
+      "startMs": 70540,
+      "endMs": 70700
+    },
+    {
+      "word": "the",
+      "startMs": 70700,
+      "endMs": 70880
+    },
+    {
+      "word": "exact",
+      "startMs": 70880,
+      "endMs": 71180
+    },
+    {
+      "word": "same",
+      "startMs": 71180,
+      "endMs": 71600
+    },
+    {
+      "word": "way.",
+      "startMs": 71600,
+      "endMs": 71840
+    },
+    {
+      "word": "Inside",
+      "startMs": 72220,
+      "endMs": 72560
+    },
+    {
+      "word": "openMontage,",
+      "startMs": 72560,
+      "endMs": 73620
+    },
+    {
+      "word": "narrated",
+      "startMs": 73820,
+      "endMs": 74120
+    },
+    {
+      "word": "by",
+      "startMs": 74120,
+      "endMs": 74320
+    },
+    {
+      "word": "the",
+      "startMs": 74320,
+      "endMs": 74460
+    },
+    {
+      "word": "same",
+      "startMs": 74460,
+      "endMs": 74660
+    },
+    {
+      "word": "free",
+      "startMs": 74660,
+      "endMs": 74940
+    },
+    {
+      "word": "local",
+      "startMs": 74940,
+      "endMs": 75240
+    },
+    {
+      "word": "voice,",
+      "startMs": 75240,
+      "endMs": 75760
+    },
+    {
+      "word": "driven",
+      "startMs": 76160,
+      "endMs": 76380
+    },
+    {
+      "word": "by",
+      "startMs": 76380,
+      "endMs": 76560
+    },
+    {
+      "word": "the",
+      "startMs": 76560,
+      "endMs": 76680
+    },
+    {
+      "word": "same",
+      "startMs": 76680,
+      "endMs": 76960
+    },
+    {
+      "word": "agent",
+      "startMs": 76960,
+      "endMs": 77360
+    },
+    {
+      "word": "that",
+      "startMs": 77360,
+      "endMs": 77560
+    },
+    {
+      "word": "just",
+      "startMs": 77560,
+      "endMs": 77800
+    },
+    {
+      "word": "finished",
+      "startMs": 77800,
+      "endMs": 78180
+    },
+    {
+      "word": "setting",
+      "startMs": 78180,
+      "endMs": 78520
+    },
+    {
+      "word": "it",
+      "startMs": 78520,
+      "endMs": 78700
+    },
+    {
+      "word": "up.",
+      "startMs": 78700,
+      "endMs": 78900
+    },
+    {
+      "word": "That",
+      "startMs": 79080,
+      "endMs": 79240
+    },
+    {
+      "word": "is",
+      "startMs": 79240,
+      "endMs": 79340
+    },
+    {
+      "word": "the",
+      "startMs": 79340,
+      "endMs": 79500
+    },
+    {
+      "word": "whole",
+      "startMs": 79500,
+      "endMs": 79680
+    },
+    {
+      "word": "pitch.",
+      "startMs": 79680,
+      "endMs": 80100
+    },
+    {
+      "word": "Point",
+      "startMs": 80360,
+      "endMs": 80560
+    },
+    {
+      "word": "it",
+      "startMs": 80560,
+      "endMs": 80820
+    },
+    {
+      "word": "at",
+      "startMs": 80820,
+      "endMs": 80940
+    },
+    {
+      "word": "an",
+      "startMs": 80940,
+      "endMs": 81080
+    },
+    {
+      "word": "idea.",
+      "startMs": 81080,
+      "endMs": 81400
+    },
+    {
+      "word": "Let",
+      "startMs": 81820,
+      "endMs": 81940
+    },
+    {
+      "word": "the",
+      "startMs": 81940,
+      "endMs": 82100
+    },
+    {
+      "word": "agent",
+      "startMs": 82100,
+      "endMs": 82500
+    },
+    {
+      "word": "run",
+      "startMs": 82500,
+      "endMs": 82800
+    },
+    {
+      "word": "the",
+      "startMs": 82800,
+      "endMs": 83060
+    },
+    {
+      "word": "pipeline.",
+      "startMs": 83060,
+      "endMs": 83380
+    }
+  ],
+  "audio": {
+    "narration": {
+      "src": "dp-openmontage-explainer/audio/narration.mp3",
+      "volume": 1.0
+    },
+    "music": {
+      "src": "dp-openmontage-explainer/music/background.mp3",
+      "volume": 0.1,
+      "fadeInSeconds": 1.5,
+      "fadeOutSeconds": 3.0
+    }
+  }
+}
